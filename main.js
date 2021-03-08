@@ -3,8 +3,8 @@ const text = document.querySelector('.text');
 text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>");
 
 const element = document.querySelectorAll('span'),
-    svgIcon = document.querySelector('#Capa_1');
-x = window.matchMedia("(max-width: 700px)");
+    svgIcon = document.querySelector('#Capa_1'),
+    x = window.matchMedia("(max-width: 600px)");
 
 function textMoving() {
     text.style.display = 'block';
