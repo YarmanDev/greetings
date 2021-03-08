@@ -1,0 +1,90 @@
+html {
+    background-color: #85FFBD;
+background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text {
+    display: none;
+    font-size: 70px;
+    color: #001f3f;
+}
+
+.text span {
+    position: relative;
+    display: inline-block;
+
+    animation: animate 2.5s ease-in-out infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+    25% {
+        transform: translateY(-100px);
+        opacity: 0.9;
+
+    }
+
+    50% {
+        opacity: 0.8;
+        transform: translateY(0px);
+
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 0.7;
+
+    }
+}
+
+.container .icon path{
+    display: none;
+    fill: transparent;
+    stroke-width: 10;
+    stroke: black;
+    stroke-dasharray: 930;
+    stroke-dashoffset: 0;
+}
+
+.svghover{
+    animation: animate1 4s linear forwards;
+}
+@keyframes animate1{
+    0%{
+        stroke-dashoffset: 0;
+        display: none;
+    }
+
+    40%{
+        stroke-dashoffset: 930;
+        display: block;
+    }
+    80%{
+        stroke-dashoffset: 1860;
+        fill: transparent;
+    }
+    100%{
+        stroke-dashoffset: 1860;
+        fill: #00ffd5d7;
+    }
+
+}
+
