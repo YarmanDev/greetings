@@ -88,3 +88,14 @@ background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
 
 }
 
+
+@media screen and (max-width: 600px) {
+    .text{
+        font-size: 25px;
+}
+
+.container .icon{
+    width: 150px;
+    height: auto;
+}
+   }
