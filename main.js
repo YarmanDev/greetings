@@ -31,7 +31,7 @@ function adaptive(x) {
         svgIcon.setAttribute("height", 512);
     }
 
-};
+}
 
 adaptive(x);
 
